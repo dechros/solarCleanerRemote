@@ -93,7 +93,7 @@ void TCPMessageTimerCallback(TimerHandle_t xTimer)
 
 void setup()
 {
-    Serial.begin(9600);
+    Serial.begin(115200);
     xSerialPrintSemaphore = xSemaphoreCreateMutex();
     xTCPMessageUpdateSemaphore = xSemaphoreCreateMutex();
     SerialDebugPrint("Serial Begin");
